@@ -17,10 +17,6 @@ class MyApp extends StatelessWidget {
   }
 }
 
-
-
-
-
 class ButtonDeSeguridad extends StatelessWidget {
   const ButtonDeSeguridad({Key? key}) : super(key: key);
 
