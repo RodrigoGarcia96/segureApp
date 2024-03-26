@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: new ButtonDeSeguridad(),
     );
   }
@@ -26,7 +27,7 @@ class ButtonDeSeguridad extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.white,  //Parte del color de la pagina principal
         title: Text('App de Emergencia', style: TextStyle(
-          color: Colors.black,
+          color: Color.fromARGB(255, 0, 255, 42),
           fontSize: 40,
         ),),
         //actions: [],
