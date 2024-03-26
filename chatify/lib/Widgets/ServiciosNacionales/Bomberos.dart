@@ -5,6 +5,7 @@ import 'package:avatar_glow/avatar_glow.dart';
 import 'package:chatify/Declaraciones/text_info.dart';
 import 'logoYServicio.dart';
 import 'LlamarUI.dart';
+import 'package:chatify/Declaraciones/text_info.dart';
 
 class Bomberos extends StatefulWidget {
 

@@ -74,8 +74,11 @@ void _pantallaDeEmergencia(context) {
                       size: 20,
                     ),
                   ),
+                ],
+              ),
                   //Aqui va la pantalla los botones de emergencias y el padding son la dimensiones
                   Container(
+                    height: MediaQuery.of(context).size.height * 120,
                     child: Column(
                       children: [
                         Padding(
@@ -94,9 +97,9 @@ void _pantallaDeEmergencia(context) {
                             padding: const EdgeInsets.all(10.0),
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
+                              children: <Widget>[
                                 Row(
-                                  children: [
+                                  children: <Widget>[
                                     Policia(),
                                     SizedBox(
                                       width: 5,
@@ -112,7 +115,7 @@ void _pantallaDeEmergencia(context) {
                                       height: 5,
                                     ),
                                     Row(
-                                      children: [
+                                      children: <Widget>[
                                       Hospital(),
                                     SizedBox(
                                       width: 5,
@@ -128,13 +131,19 @@ void _pantallaDeEmergencia(context) {
                         )
                       ],
                     ),
-                  )
+                  ),
                 ],
               )
-            ],
-          ),
-        );
-      });
+          );
+      },
+      );
 }
 
-//Los errores se solucionan poniendo ; el Single y el column
+
+
+
+
+
+
+
+
