@@ -19,15 +19,15 @@ class _PantallaDeButtonRojState extends State<PantallaDeButtonRoj> {
   }
 
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.red[200],
-      body: Column(
+ @override
+Widget build(BuildContext context) {
+  return Scaffold(
+    backgroundColor: const Color.fromARGB(255, 255, 255, 255),
+    body: SingleChildScrollView(
+      child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.stretch,
-        children:[
-
+        children: [
 
           //La letra encima del botón rojo
           Container(
@@ -35,27 +35,38 @@ class _PantallaDeButtonRojState extends State<PantallaDeButtonRoj> {
             child: Center(
               child: TextInfo(
                 size: 20.0, 
-                mensaje: 'Pulsa para llamar a Emergencias', 
+                mensaje: 'Presiona si tienes alguna emergencia.', 
                 color: Colors.black,
-
               ),
             ),
           ),
 
           SizedBox(
-            height: 20.0,
+            height: 10.0,
             width: 10.0,
           ),
+
           //El botón rojo
           Container(
             child: ButtonRojo(
               image: Image.asset('assets/images/sos_image.png'),
-
             ),
+          ),
+
+          SizedBox(
+            height: 10.0,
+            width: 10.0,
+          ),
+
+          // La imagen debajo del botón
+          Container(
+            padding: EdgeInsets.all(10.0),
+            child: Image.asset('assets/images/newimj.png'),
           )
 
-        ]
+        ],
       ),
-    );
-  }
+    ),
+  );
+}
 }

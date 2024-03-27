@@ -27,7 +27,7 @@ class ButtonDeSeguridad extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.white,  //Parte del color de la pagina principal
         title: Text('App de Emergencia', style: TextStyle(
-          color: Color.fromARGB(255, 0, 255, 42),
+          color: Color.fromARGB(255, 3, 0, 0),
           fontSize: 40,
         ),),
         //actions: [],
