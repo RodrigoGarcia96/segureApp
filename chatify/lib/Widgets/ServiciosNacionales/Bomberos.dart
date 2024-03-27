@@ -28,7 +28,7 @@ class _BomberosState extends State<Bomberos> {
               width: 170,
               height: 130,
               child: logoYServicio(
-                icon: Icons.local_police,
+                icon: Icons.fire_truck,
                 text: 'Bomberos',
               ),
               decoration: BoxDecoration(

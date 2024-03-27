@@ -26,9 +26,9 @@ class ButtonDeSeguridad extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,  //Parte del color de la pagina principal
-        title: Text('App de Emergencia', style: TextStyle(
-          color: Color.fromARGB(255, 3, 0, 0),
-          fontSize: 40,
+        title: Text('Chatify', style: TextStyle(
+          color: Color.fromARGB(255, 10, 255, 1),
+          fontSize: 10,
         ),),
         //actions: [],
       ),

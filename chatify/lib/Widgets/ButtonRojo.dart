@@ -32,13 +32,13 @@ class ButtonRojo extends StatelessWidget {
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(40),
                 child: CircleAvatar(
-                  backgroundColor: Colors.red[250],
+                  backgroundColor: Color.fromARGB(255, 91, 3, 255),
                   child: image,
                   radius: 40.0,
                 ),
               ),
             ),
-            glowColor: Colors.red,
+            glowColor: Color.fromARGB(255, 0, 4, 255),
             duration: Duration(milliseconds: 2000),
             repeatPauseDuration: Duration(milliseconds: 100),
           ),
@@ -70,7 +70,7 @@ void _pantallaDeEmergencia(context) {
                     },
                     icon: Icon(
                       Icons.cancel,
-                      color: Colors.red,
+                      color: const Color.fromARGB(255, 82, 54, 244),
                       size: 20,
                     ),
                   ),

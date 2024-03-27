@@ -28,7 +28,7 @@ class _HospitalState extends State<Hospital> {
               width: 170,
               height: 130,
               child: logoYServicio(
-                icon: Icons.local_police,
+                icon: Icons.local_hospital_outlined ,
                 text: 'Hospital',
               ),
               decoration: BoxDecoration(

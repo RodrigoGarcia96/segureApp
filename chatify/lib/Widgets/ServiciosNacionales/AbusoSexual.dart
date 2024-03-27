@@ -29,12 +29,12 @@ class _AbusoSexualState extends State<AbusoSexual> {
               width: 170,
               height: 130,
               child: logoYServicio(
-                icon: Icons.local_police,
-                text: 'Policia',
+                icon: Icons.front_hand_sharp,
+                text: 'Abuso',
               ),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
-                color: Colors.red,
+                color: Color.fromARGB(75, 37, 0, 248),
               ),
             ),
           )

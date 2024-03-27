@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:chatify/Declaraciones/text_info.dart';
 import 'package:chatify/Widgets/ButtonRojo.dart';
 import 'package:flutter/cupertino.dart';
@@ -35,14 +37,14 @@ Widget build(BuildContext context) {
             child: Center(
               child: TextInfo(
                 size: 20.0, 
-                mensaje: 'Presiona si tienes alguna emergencia.', 
+                mensaje: '¿Estás en una emergencia?', 
                 color: Colors.black,
               ),
             ),
           ),
 
           SizedBox(
-            height: 10.0,
+            height: 50.0,
             width: 10.0,
           ),
 
@@ -54,14 +56,14 @@ Widget build(BuildContext context) {
           ),
 
           SizedBox(
-            height: 10.0,
+            height: 60.0,
             width: 10.0,
           ),
 
           // La imagen debajo del botón
           Container(
             padding: EdgeInsets.all(10.0),
-            child: Image.asset('assets/images/newimj.png'),
+            child: Image.asset('assets/images/tu_imagen.png'),
           )
 
         ],
