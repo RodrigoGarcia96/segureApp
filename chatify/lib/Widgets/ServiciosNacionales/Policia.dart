@@ -27,7 +27,7 @@ class _PoliciaState extends State<Policia> {
               height: 130,
               child: logoYServicio(
                 icon: Icons.local_police,
-                text: 'Policia',
+                text: 'Denuncia',
               ),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
@@ -49,18 +49,34 @@ class _PoliciaState extends State<Policia> {
       builder: (BuildContext bc){
         return Column(
           children: [
-            Expanded(child: TextInfo(size: 20.0, mensaje: 'Policia', color: Color.fromARGB(255, 0, 0, 0),),),
+            Expanded(child: TextInfo(size: 20.0, mensaje: 'Policia o Denuncia', color: Color.fromARGB(255, 0, 0, 0),),),
             LlamarUI(
+              // Asistencia médica, de seguridad o protección civil
+              // Numero Real "911"
               NumeroDeMovil: '12345678',
-              NombreDeSevicio: 'Policia de Zumpango',
+              NombreDeSevicio: 'Emergencias',
             ),
             LlamarUI(
+              // Numero Real "089"
               NumeroDeMovil: '12345678',
-              NombreDeSevicio: 'Policia de Cuautitlan',
+              NombreDeSevicio: 'Denuncia Anónima',
             ),
             LlamarUI(
+              // Numero Real "088"
               NumeroDeMovil: '12345678',
-              NombreDeSevicio: 'Policia de Estado de México',
+              NombreDeSevicio: 'Atención Ciudadana',
+            ),
+            LlamarUI(
+              // Procuraduria general de la republica
+              // Numero Real "01 800 00 85 400"
+              NumeroDeMovil: '12345678',
+              NombreDeSevicio: 'PGR',
+            ),
+            LlamarUI(
+              // Fiscalía General de Justicia
+              // Numero Real "01 800 70 28 770"
+              NumeroDeMovil: '12345678',
+              NombreDeSevicio: 'FGJ',
             ),
           ],
         );

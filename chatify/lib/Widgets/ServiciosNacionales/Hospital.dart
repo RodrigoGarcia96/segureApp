@@ -11,7 +11,7 @@ class Hospital extends StatefulWidget {
 }
 
 class _HospitalState extends State<Hospital> {
-   @override
+  @override
   Widget build(BuildContext context) {
     return Expanded(
       child: Column(
@@ -26,7 +26,7 @@ class _HospitalState extends State<Hospital> {
               height: 130,
               child: logoYServicio(
                 icon: Icons.local_hospital_outlined ,
-                text: 'Hospital',
+                text: 'Asistencia Médica',
               ),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
@@ -52,16 +52,15 @@ void _LlamarEmergencia(context) {
           children: [
             Expanded(child: TextInfo(size: 20.0, mensaje: 'Hospital', color: Colors.black,),),
             LlamarUI(
+              // Asistencia médica, de seguridad o protección civil
+              // Numero Real "911"
               NumeroDeMovil: '12345678',
-              NombreDeSevicio: 'Hospital de Zumpango',
+              NombreDeSevicio: 'Emergencias',
             ),
             LlamarUI(
+              // Numero Real "55 53 95 11 11"
               NumeroDeMovil: '12345678',
-              NombreDeSevicio: 'Hospital de Cuautitlan',
-            ),
-            LlamarUI(
-              NumeroDeMovil: '12345678',
-              NombreDeSevicio: 'Hospital de Estado de México',
+              NombreDeSevicio: 'Cruz Roja',
             ),
           ],
         );

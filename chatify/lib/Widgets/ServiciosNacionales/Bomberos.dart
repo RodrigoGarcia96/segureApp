@@ -26,7 +26,7 @@ class _BomberosState extends State<Bomberos> {
               height: 130,
               child: logoYServicio(
                 icon: Icons.fire_truck,
-                text: 'Bomberos',
+                text: 'Protección civil',
               ),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
@@ -49,18 +49,32 @@ void _LlamarEmergencia(context) {
       builder: (BuildContext bc){
         return Column(
           children: [
-            Expanded(child: TextInfo(size: 20.0, mensaje: 'Policia', color: Colors.black,),),
+            Expanded(child: TextInfo(size: 20.0, mensaje: 'Protección Civil', color: Colors.black,),),
             LlamarUI(
+              // Asistencia médica, de seguridad o protección civil
+              // Numero Real "911"
               NumeroDeMovil: '12345678',
-              NombreDeSevicio: 'Bomberos de Zumpango',
+              NombreDeSevicio: 'Emergencias',
             ),
             LlamarUI(
+              // Numero Real "55 51 28 00 00"
               NumeroDeMovil: '12345678',
-              NombreDeSevicio: 'Bomberos de Cuautitlan',
+              NombreDeSevicio: 'Protección Civil',
             ),
             LlamarUI(
+              // Numero Real "800 46 23 63 46"
               NumeroDeMovil: '12345678',
-              NombreDeSevicio: 'Bomberos de Estado de México',
+              NombreDeSevicio: 'Incendios Forestales',
+            ),
+            LlamarUI(
+              // Numero Real "800 46 23 63 46"
+              NumeroDeMovil: '12345678',
+              NombreDeSevicio: 'Bomberos',
+            ),
+            LlamarUI(
+              // Numero Real "55 56 58 11 11"
+              NumeroDeMovil: '12345678',
+              NombreDeSevicio: 'LACATEL',
             ),
           ],
         );
