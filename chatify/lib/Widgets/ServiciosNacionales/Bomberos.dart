@@ -1,11 +1,8 @@
+import 'package:chatify/Declaraciones/text_info.dart';
 import 'package:chatify/Widgets/ServiciosNacionales/logoYServicio.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:avatar_glow/avatar_glow.dart';
-import 'package:chatify/Declaraciones/text_info.dart';
-import 'logoYServicio.dart';
+
 import 'LlamarUI.dart';
-import 'package:chatify/Declaraciones/text_info.dart';
 
 class Bomberos extends StatefulWidget {
 
@@ -14,7 +11,7 @@ class Bomberos extends StatefulWidget {
 }
 
 class _BomberosState extends State<Bomberos> {
-   @override
+  @override
   Widget build(BuildContext context) {
     return Expanded(
       child: Column(
@@ -33,7 +30,7 @@ class _BomberosState extends State<Bomberos> {
               ),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
-                color: Colors.red,
+                color: Color.fromARGB(255, 0, 81, 255),
               ),
             ),
           )

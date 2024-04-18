@@ -1,11 +1,8 @@
+import 'package:chatify/Declaraciones/text_info.dart';
 import 'package:chatify/Widgets/ServiciosNacionales/logoYServicio.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:avatar_glow/avatar_glow.dart';
-import 'package:chatify/Declaraciones/text_info.dart';
-import 'logoYServicio.dart';
+
 import 'LlamarUI.dart';
-import 'package:chatify/Declaraciones/text_info.dart';
 
 class Hospital extends StatefulWidget {
   
@@ -33,7 +30,7 @@ class _HospitalState extends State<Hospital> {
               ),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
-                color: Colors.red,
+                color: Color.fromARGB(255, 0, 81, 255),
               ),
             ),
           )

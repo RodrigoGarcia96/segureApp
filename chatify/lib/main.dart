@@ -25,10 +25,10 @@ class ButtonDeSeguridad extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.white,  //Parte del color de la pagina principal
-        title: Text('Chatify', style: TextStyle(
-          color: Color.fromARGB(255, 10, 255, 1),
-          fontSize: 10,
+        backgroundColor: Colors.blue,  //Parte del color de la pagina principal
+        title: Text('Rapid Network', style: TextStyle(
+          color: Colors.black,
+          fontSize: 40,
         ),),
         //actions: [],
       ),

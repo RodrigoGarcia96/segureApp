@@ -1,11 +1,8 @@
+import 'package:chatify/Declaraciones/text_info.dart';
 import 'package:chatify/Widgets/ServiciosNacionales/logoYServicio.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:avatar_glow/avatar_glow.dart';
-import 'package:chatify/Declaraciones/text_info.dart';
-import 'logoYServicio.dart';
+
 import 'LlamarUI.dart';
-import 'package:chatify/Declaraciones/text_info.dart';
 
 class AbusoSexual extends StatefulWidget {
   
@@ -34,7 +31,7 @@ class _AbusoSexualState extends State<AbusoSexual> {
               ),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
-                color: Color.fromARGB(75, 37, 0, 248),
+                color: Color.fromARGB(255, 0, 81, 255),
               ),
             ),
           )
@@ -66,7 +63,7 @@ void _LlamarEmergencia(context) {
             ),
             LlamarUI(
               NumeroDeMovil: '12345678',
-              NombreDeSevicio: 'Abuso SExual de Estado de México',
+              NombreDeSevicio: 'Abuso Sexual de Estado de México',
             ),
             //Cualquiera de estos compnentes se pueden agregar o quitar dependiendo del uso que le quiera dar
           

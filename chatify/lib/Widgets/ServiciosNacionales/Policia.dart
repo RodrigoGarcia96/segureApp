@@ -1,11 +1,8 @@
+import 'package:chatify/Declaraciones/text_info.dart';
 import 'package:chatify/Widgets/ServiciosNacionales/logoYServicio.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:avatar_glow/avatar_glow.dart';
-import 'package:chatify/Declaraciones/text_info.dart';
-import 'logoYServicio.dart';
+
 import 'LlamarUI.dart';
-import 'package:chatify/Declaraciones/text_info.dart';
 
 class Policia extends StatefulWidget {
 
@@ -34,7 +31,7 @@ class _PoliciaState extends State<Policia> {
               ),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
-                color: Colors.red,
+                color: Color.fromARGB(255, 0, 81, 255),
               ),
             ),
           )
@@ -52,7 +49,7 @@ class _PoliciaState extends State<Policia> {
       builder: (BuildContext bc){
         return Column(
           children: [
-            Expanded(child: TextInfo(size: 20.0, mensaje: 'Policia', color: Colors.black,),),
+            Expanded(child: TextInfo(size: 20.0, mensaje: 'Policia', color: Color.fromARGB(255, 0, 0, 0),),),
             LlamarUI(
               NumeroDeMovil: '12345678',
               NombreDeSevicio: 'Policia de Zumpango',

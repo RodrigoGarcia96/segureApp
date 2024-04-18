@@ -1,8 +1,5 @@
-import 'dart:html';
-
 import 'package:chatify/Declaraciones/text_info.dart';
 import 'package:chatify/Widgets/ButtonRojo.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class PantallaDeButtonRoj extends StatefulWidget {
@@ -21,7 +18,7 @@ class _PantallaDeButtonRojState extends State<PantallaDeButtonRoj> {
   }
 
 
- @override
+@override
 Widget build(BuildContext context) {
   return Scaffold(
     backgroundColor: const Color.fromARGB(255, 255, 255, 255),
@@ -36,8 +33,8 @@ Widget build(BuildContext context) {
             padding: EdgeInsets.only(left: 20.0),
             child: Center(
               child: TextInfo(
-                size: 20.0, 
-                mensaje: '¿Estás en una emergencia?', 
+                size: 40.0,
+                mensaje: '¿Estás en una emergencia?',
                 color: Colors.black,
               ),
             ),
@@ -54,7 +51,7 @@ Widget build(BuildContext context) {
               image: Image.asset('assets/images/sos_image.png'),
             ),
           ),
-
+          
           SizedBox(
             height: 60.0,
             width: 10.0,

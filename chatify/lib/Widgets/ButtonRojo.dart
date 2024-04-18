@@ -1,11 +1,11 @@
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
 import 'package:avatar_glow/avatar_glow.dart';
 import 'package:chatify/Declaraciones/text_info.dart';
-import 'ServiciosNacionales/Policia.dart';
+import 'package:flutter/material.dart';
+
+import 'ServiciosNacionales/AbusoSexual.dart';
 import 'ServiciosNacionales/Bomberos.dart';
 import 'ServiciosNacionales/Hospital.dart';
-import 'ServiciosNacionales/AbusoSexual.dart';
+import 'ServiciosNacionales/Policia.dart';
 
 class ButtonRojo extends StatelessWidget {
   final Image image;
@@ -32,13 +32,13 @@ class ButtonRojo extends StatelessWidget {
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(40),
                 child: CircleAvatar(
-                  backgroundColor: Color.fromARGB(255, 91, 3, 255),
+                  backgroundColor: Color.fromARGB(255, 20, 1, 107),
                   child: image,
                   radius: 40.0,
                 ),
               ),
             ),
-            glowColor: Color.fromARGB(255, 0, 4, 255),
+            glowColor: Color.fromARGB(255, 20, 1, 107),
             duration: Duration(milliseconds: 2000),
             repeatPauseDuration: Duration(milliseconds: 100),
           ),
@@ -70,7 +70,7 @@ void _pantallaDeEmergencia(context) {
                     },
                     icon: Icon(
                       Icons.cancel,
-                      color: const Color.fromARGB(255, 82, 54, 244),
+                      color: Color.fromARGB(255, 0, 81, 255),
                       size: 20,
                     ),
                   ),
@@ -108,7 +108,7 @@ void _pantallaDeEmergencia(context) {
                                     //SizedBox es el espacio entre 2 widgets
                                     Bomberos(),
                                   ],
-                                ), 
+                                ),
                                 //El error se arregla con una coma
                                 SizedBox(
                                       width: 5,
